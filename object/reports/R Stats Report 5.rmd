@@ -1,0 +1,102 @@
+---
+title: 'R Stats Report 5: Multiple Regression'
+subtitle: You R. Name
+date: 'January 1, 2022'
+output:
+  html_document:
+    theme: spacelab
+    highlight: pygment
+    toc: yes
+    number_sections: no
+    toc_float:
+      collapsed: no
+---
+<!-- In the header above, edit the name and date -->
+
+<!-- Do not edit style -->
+<style type="text/css">
+.main-container {font-size: 18px;}
+</style>
+
+<!-- Do not edit this first code chunk -->
+```{r include=FALSE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE)
+
+# click the green play button to load the survey scores
+sleep.df  <- read.csv("https://rawcdn.githack.com/andrewebrandt/methods.github.io/main/object/datasets/LifeSat.csv", header = TRUE)
+```
+
+**Research Summary**
+
+**Design and Procedure**: Researchers interested in the amount of sleep young adults get collected survey responses from 62 undergraduate students enrolled in an introductory psychology course. Participants answered one item about getting enough sleep (SleepEn), comfort being without their phone (PhoneWO), and social media use (SocialMedia) (all survey items are shown in Appendix A). 
+
+*Hypothesis*: Higher agreement about getting enough sleep will be predicted by hihger agreement about going a long time without looking at a phone and by lower agreement that social media is an everyday activity.
+
+
+### 1. Correlation matrix
+
+Use the cor() function to create a correlation matrix with your continuous variables; SleepEn, PhoneWO, and SocialMedia.
+```{r}
+library(dplyr)
+
+   
+```
+
+
+### 2. Analysis of Regression
+
+Use the lm() function to run the analysis of regression on SleepEN with PhoneWO and SocialMedia as predictor variables.
+```{r}
+
+
+```
+
+
+### 3. Test for multicollinearity 
+
+Use the vif() function in the *car* package to find the variance inflation factor for each predictor variable.
+```{r}
+library(car) 
+
+
+```
+
+
+### 4. Scatter plots
+
+Use ggplot() to create a scatter plot between SleepEn and SocialMedia.
+```{r}
+library(ggplot2)
+library(scales)
+
+
+```
+
+
+### Appendix A: Survey items
+
+I feel I get enough sleep
+
+  1. Strongly Disagree
+  2. Disagree
+  3. Neither Agree nor Disagree
+  4. Agree
+  5. Strongly Agree
+
+I can go a long time without looking at my phone
+
+  1. Strongly Disagree
+  2. Disagree
+  3. Neither Agree nor Disagree
+  4. Agree
+  5. Strongly Agree
+
+Social media is part of your everyday activity
+
+  1. Strongly Agree
+  2. Agree
+  3. Neutral
+  4. Disagree
+  5. Strongly Disagree
+
+  

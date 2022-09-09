@@ -1,0 +1,129 @@
+P,Gender,Political,VoluntHr,Alcohol,CRT,Empathy,Extrovert,ClimHarm,CauseClim,SciClim,KnowClim,WorryClim.Y
+1,Male,No party,8,3,1,3,7,5,1,1,4,4
+2,Female,Democrat,24,3,0,3,6,5,1,1,4,4
+3,Female,No party,0,2,0,5,1,3,1,3,2,3
+4,Female,Republican,4,3,0,3,6,4,1,1,2,3
+5,Female,Independent,5,3,0,3,4,3,1,1,3,3
+6,Female,No party,18,3,2,2,6,5,1,1,3,3
+7,Male,No party,10,2,0,2,6,3,1,1,3,3
+8,Female,No party,,2,0,3,6,5,1,1,3,4
+9,Male,Republican,50,3,0,2,1,2,1,3,2,2
+10,Female,No party,20,2,1,2,3,5,1,1,2,2
+11,Female,Democrat,50,3,0,1,6,5,1,1,4,5
+12,Female,Democrat,3,3,0,2,3,5,1,1,2,3
+13,Male,Democrat,8,3,2,3,6,4,1,1,1,2
+14,Female,No party,15,4,0,3,5,3,1,3,1,2
+15,Male,Democrat,4,3,0,4,4,4,2,1,4,3
+16,Female,Democrat,40,2,2,2,7,5,1,1,4,4
+17,Male,Democrat,,1,0,4,2,5,1,1,3,2
+18,Female,No party,30,2,1,3,7,4,2,1,2,2
+19,Female,Democrat,50,4,3,2,6,5,1,1,3,4
+20,Male,Democrat,15,4,3,2,3,5,1,1,2,3
+21,Female,Democrat,20,3,1,1,6,5,1,1,3,4
+22,Male,Democrat,12,2,0,3,5,5,1,1,4,4
+23,Female,Democrat,15,2,0,1,1,4,1,1,3,3
+24,Male,Republican,25,2,1,3,6,3,1,3,2,1
+25,Male,Republican,20,3,3,3,7,4,1,1,3,3
+26,Female,Independent,0,3,0,3,6,4,2,1,1,2
+27,Male,Independent,65,4,1,3,6,5,1,1,3,4
+28,Female,Democrat,260,2,3,2,5,5,1,1,3,4
+29,Male,Republican,8,2,2,4,4,2,2,3,2,1
+30,Female,Republican,100,1,2,5,5,5,2,1,3,4
+31,Female,Other party,40,2,1,2,7,5,1,1,2,4
+32,Female,Democrat,0,2,3,1,1,5,1,1,2,4
+33,Female,Democrat,60,2,1,3,5,5,1,1,3,5
+34,Male,Democrat,50,3,3,1,4,5,1,1,3,3
+35,Female,Democrat,20,3,3,2,6,5,1,1,2,4
+36,Female,Democrat,10,4,0,3,7,3,2,1,3,2
+37,Male,Democrat,0,1,2,2,2,5,1,1,3,4
+38,Female,No party,150,4,0,3,3,5,1,1,3,4
+39,Female,Independent,100,2,0,4,7,4,2,1,3,2
+40,Female,No party,0,3,0,3,5,4,1,1,3,3
+41,Male,Democrat,10,2,3,2,3,5,1,1,4,5
+42,Female,No party,0,3,1,2,2,5,1,1,4,4
+43,Male,Republican,50,2,0,3,2,1,2,2,1,1
+44,Female,Independent,10,2,0,1,1,5,1,1,2,4
+45,Female,Democrat,12,2,0,3,4,5,1,1,2,3
+46,Male,Democrat,5,1,0,3,6,5,1,1,4,4
+47,Male,No party,20,2,0,2,5,2,2,1,1,1
+48,Female,Independent,0,4,0,2,3,5,1,1,3,3
+49,Female,Independent,6,2,0,2,6,4,1,1,3,2
+50,Female,Democrat,90,3,1,3,4,5,1,1,2,3
+51,Female,Democrat,10,4,1,3,6,4,1,1,2,2
+52,Female,Democrat,25,3,1,1,7,5,1,1,3,3
+53,Female,No party,0,2,2,2,5,4,1,1,3,2
+54,Male,Democrat,75,2,3,3,5,4,1,1,4,3
+55,Female,Republican,5,3,0,3,7,3,2,1,1,1
+56,Female,Democrat,30,2,2,2,6,4,1,1,2,4
+57,Female,Democrat,5,2,3,3,1,5,1,1,3,4
+58,Male,Democrat,0,2,2,3,6,5,1,1,4,3
+59,Female,No party,0,2,3,2,2,5,1,1,3,5
+60,Female,Democrat,0,2,0,2,,,,,,3
+61,Male,Republican,0,4,0,3,2,3,2,1,3,2
+62,Female,Libertarian,50,4,1,4,7,5,1,3,1,2
+63,Female,No party,8,3,2,3,6,5,1,1,2,3
+64,Male,Republican,20,2,0,3,5,4,1,3,3,4
+65,Female,Independent,40,3,0,2,5,3,2,2,3,4
+66,Female,Other party,40,2,0,2,7,5,1,1,3,3
+67,Male,Independent,72,4,1,2,6,5,1,1,3,3
+68,Female,No party,4,4,0,1,7,5,1,1,2,3
+69,Male,No party,25,2,1,4,4,5,1,1,5,1
+70,Female,Independent,,4,0,3,7,5,1,1,3,2
+71,Male,Democrat,25,2,1,3,6,5,1,1,3,3
+72,Female,Democrat,0,3,2,3,4,4,1,1,1,1
+73,Female,Democrat,32,4,2,2,2,4,1,1,3,4
+74,Female,Democrat,15,2,3,3,2,5,1,1,3,4
+75,Female,Independent,5,2,1,2,6,5,1,1,3,5
+76,Female,Republican,100,4,2,1,1,5,2,1,3,3
+77,Female,Democrat,5,4,0,4,3,5,1,1,4,4
+78,Female,Republican,1000,3,2,3,7,5,1,1,2,3
+79,Male,Democrat,4,3,1,3,3,5,1,1,4,3
+80,Male,Republican,0,3,0,1,5,4,1,1,2,3
+81,Female,Democrat,12,2,0,2,3,5,1,1,4,4
+82,Female,No party,,4,0,2,5,4,1,1,2,3
+83,Female,Democrat,0,2,0,3,4,4,1,1,2,3
+84,Female,No party,24,4,0,5,7,5,1,1,3,4
+85,Male,Democrat,6,4,0,3,5,3,1,1,1,2
+86,Male,Republican,100,2,1,3,2,3,1,1,3,3
+87,Female,Independent,20,3,1,4,2,4,1,1,3,3
+88,Female,No party,20,4,0,5,1,4,2,2,2,2
+89,Female,Democrat,30,4,2,2,3,5,1,1,3,3
+90,Female,Democrat,50,4,2,3,3,5,1,1,4,4
+91,Female,No party,0,3,1,2,4,4,1,1,2,3
+92,Male,Libertarian,20,2,0,3,7,5,1,1,4,3
+93,Male,Democrat,12,2,3,2,3,3,1,1,3,4
+94,Female,Democrat,35,3,0,2,2,5,1,1,3,4
+95,Female,Democrat,10,4,2,2,6,5,1,1,3,2
+96,Male,Democrat,10,2,0,2,5,4,2,1,2,2
+97,Male,Republican,40,2,0,2,7,2,1,1,1,1
+98,Male,No party,10,2,2,2,1,4,1,1,3,3
+99,Female,Democrat,40,4,2,2,7,5,1,1,4,3
+100,Male,No party,8,3,1,3,5,4,1,1,2,3
+101,Female,No party,12,4,0,1,3,5,1,1,2,2
+102,Female,No party,10,3,3,2,1,5,1,1,4,5
+103,Male,Republican,20,3,3,3,1,3,1,1,2,2
+104,Female,Democrat,0,3,3,4,5,3,1,1,3,4
+105,Male,Democrat,50,1,3,2,2,5,1,1,3,4
+106,Female,Democrat,50,3,3,1,6,4,1,1,2,4
+107,Female,No party,0,2,0,4,1,5,1,1,2,3
+108,Female,Independent,20,3,0,2,5,5,1,1,3,4
+109,Female,Democrat,6,2,2,4,2,4,1,1,3,4
+110,Male,Republican,4,2,1,2,4,2,2,1,2,1
+111,Female,Democrat,40,2,0,2,2,5,1,1,4,4
+112,Female,Democrat,5,1,1,2,2,5,1,1,2,4
+113,Female,Democrat,50,3,0,3,3,5,1,1,4,5
+114,Male,No party,50,3,1,2,5,2,2,1,3,3
+115,Female,Republican,10,4,1,2,3,5,1,1,1,2
+116,Female,Libertarian,5,2,2,2,2,4,1,1,3,4
+117,Male,Democrat,20,2,3,3,5,5,1,1,3,3
+118,Female,No party,0,3,0,2,7,5,1,1,2,4
+119,Female,Independent,8,2,0,2,2,5,1,1,3,4
+120,Male,Democrat,50,2,0,2,6,5,1,1,3,4
+121,Female,Republican,15,3,0,3,3,3,2,1,2,2
+122,Female,Republican,75,4,0,3,4,5,1,3,3,3
+123,Female,Democrat,30,2,1,2,6,5,1,1,3,4
+124,Female,Democrat,0,2,0,2,5,4,1,1,3,3
+125,Male,No party,0,1,3,4,5,2,2,3,2,2
+126,Female,Independent,30,2,3,2,3,4,1,1,3,4
+127,Female,Independent,1,3,0,5,7,5,1,1,4,5
+128,Female,No party,15,2,0,2,2,4,1,1,3,3

@@ -1,0 +1,68 @@
+---
+title: 'R Stats Report 2: Null-Hypothesis Testing'
+author: 'Your Name'
+date: 'January 1, 2022'
+output:
+  html_document:
+    theme: spacelab
+    highlight: pygment
+    toc: yes
+    number_sections: no
+    toc_float:
+      collapsed: no
+---
+<!-- In the header above, edit the name and date -->
+
+<!-- Do not edit style -->
+<style type="text/css">
+.main-container {font-size: 18px;}
+</style>
+
+<!-- Do not edit this first code chunk -->
+```{r include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE)
+
+# click the green play button to simulate the sample reading scores
+set.seed(9)
+read.Y <- round(rnorm(38, mean = 309, sd = 30),0)
+read.df <- as.data.frame(read.Y)
+```
+
+**Research Summary**
+
+**Background**: The [National Assessment of Educational Progress (NAEP)](https://www.nationsreportcard.gov/reading?grade=12) assesses student performance in reading in both public and private schools across the US. The assessment measures reading comprehension by asking students to read selected grade-appropriate materials and answer questions based on what they have read. The NAEP reading scale scores range from 0 to 500. In the most recent reading assessment (2019), approximately 26,700 grade 12 students were tested, and their scores serve as the best estimate of reading performance in the 12th grade population, mu = 285. 
+
+The York Prep Academy, a top-ranked private school in a large metropolitan city of the eastern US, has recently posted its 2019 NAEP reading assessment results collected from n = 38 12th graders: mean = 309, SD = 30. This school has a tuition cost of $55,000 a year, and claims that its students' exceptionally high test scores justify the cost.
+
+**Hypothesis**: YPA 12th graders perform significantly better than the national average on the NAEP reading assessment.
+
+
+### 1. Sample summary
+
+Use the describe() function in the *psych* package to create a descriptive statistics summary table for the sample NAEP scores in read.df.
+```{r}
+library(psych)
+
+
+```
+
+
+### 2. Plot the frequency distribution
+
+Use ggplot() in the *ggplot2* package to plot the reading scores in a frequency distribution graph (histogram). Set bins = 50.
+```{r}
+library(ggplot2)
+
+                    
+```
+
+
+### 3. NHST using a one-sample t-test
+
+Test the null hypothesis that the average NAEP score from the York Prep Academy is no different than average NAEP score in the general population, mu = 285. Use a two-tail test and assume alpha = .05.
+
+Use t.test() to run the one-sample t-test on reading scores and generate a p-value. Show the results.
+```{r}
+
+  
+```

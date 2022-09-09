@@ -1,0 +1,110 @@
+---
+title: 'R Stats Report 3: Independent-Samples t-Statistic'
+author: 'Your Name'
+date: 'January 1, 2022'
+output:
+  html_document:
+    theme: spacelab
+    highlight: pygment
+    toc: yes
+    number_sections: no
+    toc_float:
+      collapsed: no
+---
+<!-- In the header above, edit the name and date -->
+
+<!-- Do not edit style -->
+<style type="text/css">
+.main-container {font-size: 18px;}
+</style>
+
+<!-- Do not edit this first code chunk -->
+```{r include=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE)
+
+# click the green play button to load the survey scores
+climAtt.df  <- read.csv("https://rawcdn.githack.com/andrewebrandt/methods.github.io/main/object/datasets/climAtt-SR1.csv", header = TRUE)
+```
+
+**Research Summary**
+
+Students (86 female, 42 male) enrolled in an introductory psychology course completed an online survey. Participants reported their gender and political affiliation, and answered items on perceived climate change harm and beliefs about their knowledge of global warming (see all items in Appendix A).
+
+*Perceived climate change harm* was assessed with one item, "Please indicate your belief about how much harm climate change is likely to cause: People all over the world" (1 = No harm, 5 = Great harm).
+
+*Knowledge about global warming* was assessed with one item, "Compared to other people, how knowledgeable are you about the issue of global warming" (1 = Not at all, 5 = Completely).
+
+
+### 1. Sample summary
+
+Use the describeBy() function in the *psych* package to create a descriptive statistics summary table for perceived climate change harm across gender.
+```{r}
+library(psych)
+
+                                                  
+```
+
+
+### 2. Strip chart
+
+Use the ggplot() function in the *ggplot2* package to create a strip chart for perceived climate change harm across gender. Add a symbol to indicate the mean and error bars to indicate the SEM.
+```{r}
+library(ggplot2)
+
+
+```
+
+
+### 3. NHST using an independent-samples t-test
+
+Test the null hypothesis that average climate change harm scores do not differ between female and male participants in the population. Use a two-tail test and assume alpha = .05.
+
+Use t.test() to run a Student's t-test on climate harm scores and generate a p-value.
+```{r}
+
+
+```
+
+
+### 4. Cohen's d (effect size)
+
+Use cohens_d() in the *effectsize* package to find Cohen's d for the difference in climate harm scores across gender.
+```{r}
+library(effectsize)
+
+
+```
+
+
+### Appendix A: Full survey questions
+
+1. Self-identified gender
+  + Female
+  + Male
+  + Non-binary
+
+
+2. When it comes to political parties in the United States, how would you describe yourself?
+  + Democrat
+  + Independent
+  + Libertarian
+  + Republican 
+  + Other party
+  + No party
+
+
+3. Please indicate your belief about how much harm climate change is likely to cause: People all over the world
+  + 1=No harm
+  + 2=Slight harm
+  + 3=Moderate harm
+  + 4=Considerable harm
+  + 5=Great harm
+
+
+4. Compared to other people, how knowledgeable are you about the issue of global warming?
+  + 1=Not at all
+  + 2=Slightly
+  + 3=Moderately
+  + 4=Considerably
+  + 5=Completely
+

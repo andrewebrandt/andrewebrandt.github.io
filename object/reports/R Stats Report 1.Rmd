@@ -1,0 +1,82 @@
+---
+title: 'R Stats Report 1: Describe and Plot Data'
+author: 'Your Name'
+date: 'January 1, 2022'
+output:
+  html_document:
+    theme: spacelab
+    highlight: pygment
+    toc: yes
+    number_sections: no
+    toc_float:
+      collapsed: no
+---
+<!-- In the header above, edit the name and date -->
+
+<!-- Do not edit style -->
+<style type="text/css">
+.main-container {font-size: 18px;}
+</style>
+
+<!-- Do not edit this first code chunk -->
+```{r include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE)
+
+# press the green play button to load the survey scores
+sleepQ.df  <- read.csv("https://rawcdn.githack.com/andrewebrandt/methods.github.io/main/object/datasets/sleepQ.csv", header = TRUE)
+```
+
+**Research Summary**
+
+Students enrolled in an introductory psychology course completed an online survey. Participants answered items about their gender identity, phone screen time, sadness, feelings about the future, and sleep quality (see all items in Appendix A).
+
+
+### 1. Scatter plot
+
+Use ggplot() in the *ggplot2* package to create a scatter plot of the relationship between sadness (X) and feelings about the future (Y).
+```{r}
+library(ggplot2)
+
+                    
+```
+
+
+### 2. Descriptive statistics summary table
+
+Use select() in the *dplyr* package to select the ScreenT and SleepQual variables and use the describe() function in the *psych* package to create a descriptive statistics summary table.
+```{r}
+library(dplyr)
+library(psych)
+
+   
+```
+
+
+### Appendix A: Full survey questions
+
+1. Self-identified gender [variable = Gender]
+  + 1=Female
+  + 2=Male
+  + 3=Non-binary
+  + 4=Other
+
+2. Go into your smart phone settings and select Screen Time. Report your average screen time in minutes. [variable = ScreenT]
+
+3. Please select the option that describes you. [variable = Sad]
+  + 1=I do not feel sad
+  + 2=I feel sad
+  + 3=I am sat all the time and I can't snap out of it
+  + 4=I am so sad and unhappy that I can't stand it
+  
+4. Please select the option that describes you. [variable = Future]
+  + 1=I am not particularity discouraged about the future
+  + 2=I feel discouraged about the future
+  + 3=I have nothing to look forward to
+  + 4=I feel the future is hopeless and that things cannot improve
+
+5. I rarely wake up throughout the night. [variable = SleepQual]
+  + 1=Strongly Disagree
+  + 2=Disagree
+  + 3=Neither agree nor disagree
+  + 4=Agree
+  + 5=Strongly Agree

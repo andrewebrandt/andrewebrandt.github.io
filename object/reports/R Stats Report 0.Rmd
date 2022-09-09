@@ -1,0 +1,54 @@
+---
+title: 'R Stats Report 0: Getting Started'
+author: 'Your Name'
+date: 'January 1, 2022'
+output:
+  html_document:
+    theme: spacelab
+    highlight: pygment
+    toc: yes
+    number_sections: no
+    toc_float:
+      collapsed: no
+---
+<!-- In the header above, edit the name and date -->
+
+<!-- Do not edit style -->
+<style type="text/css">
+.main-container {font-size: 18px;}
+</style>
+
+<!-- Do not edit this first code chunk -->
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+### 1. Calculate a value
+
+Enter the console commands that are required to find "s" in the following formula:
+
+$s = \sqrt{\frac{1634}{92}}$
+
+```{r}
+
+
+```
+
+
+### 2. Load a package and execute a command
+
+The "datasets" package contains several data sets, including one called women, which contains 15 observations on two variables, height and weight. In the code chunk below,  
+
+  1. Use library() to load the "psych" and "datasets" packages (be sure both are installed first)
+  2. Use describe() to find the descriptive statistics for the two variables
+  3. Use plot() to create a plot with the two variables
+  
+```{r}
+library(psych)
+library(datasets)
+
+
+```
+
+
