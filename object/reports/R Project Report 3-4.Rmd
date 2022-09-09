@@ -23,7 +23,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
 
 # click the green play button to load the survey scores
-selfComp.df  <- read.csv("https://rawcdn.githack.com/andrewebrandt/methods.github.io/main/object/datasets/selfComp.csv", header = TRUE)
+selfComp.df  <- read.csv("https://andrewebrandt.github.io/object/datasets/selfComp.csv", header = TRUE)
 
 # calculate a mean self compassion score and save the values in a new variable, SCmean 
 library(dplyr)
