@@ -28,7 +28,7 @@
 @media only screen and (min-width: 0rem) {
   #services-1628 {
     padding: var(--sectionPadding);
-    background-color: #ffffff;
+    background-color: #f8a3a3;
   }
   #services-1628 .cs-container {
     width: 100%;
@@ -42,8 +42,8 @@
     gap: clamp(3rem, 6vw, 4rem);
   }
   #services-1628 .cs-content {
-    /* set text align to left if content needs to be left aligned */
-    text-align: center;
+    /* top page text -> set text align to left if content needs to be left aligned */
+    text-align: left;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -209,7 +209,7 @@
 
 </head>
 
-<body class="w3-light-grey w3-content" style="max-width:1300px">
+<body>  <!-- class="w3-light-grey w3-content" style="max-width:1300px" -->
 
 <!-- ============================================ -->
 <!--                  Services                    -->
@@ -219,8 +219,8 @@
   <div class="cs-container">
       <div class="cs-content">
           <div class="cs-flex">
-              <span class="cs-topper">Our Services</span>
-              <h2 class="cs-title">Grow Your Business with Our New Bold Agency</h2>
+              <span class="cs-topper">Welcome</span>
+              <h2 class="cs-title">Andrew Brandt, PhD</h2>
           </div>
           <p class="cs-text">
               Aqestic recusandae laudantium optio amet a quisquam saepe aliquid, voluptate praesentium dicta fuga dolor error perspiciatis voluptatem eum cupiditate totam reiciendis quam minus inventore sint rem impedit esse quasi Tenetur sed reprehenderit earum a magni aliquid blanditiis dolores, veritatis soluta autem beatae officia expedita ipsum rerum doloribus sit provident delectus.
@@ -310,7 +310,7 @@
 
 <!-- OLD SITE -->
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-collapse w3-white" style="z-index:3;width:230px;" id="mySidebar"><br>
+<!-- <nav class="w3-sidebar w3-collapse w3-white" style="z-index:3;width:230px;" id="mySidebar"><br>
   <div class="w3-container" style="color: #616161">
     <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
       <i class="fa fa-remove"></i>
@@ -324,16 +324,16 @@
     <a href="https://andrewebrandt.github.io/course-doc.html" style="text-decoration: none;" class="w3-bar-item w3-button"><i class="fa fa-grav fa-fw w3-margin-right"></i>Psyc Courses</a> 
     <a href="https://www.linkedin.com/in/andrewbrandt-phd/" target="_blank" style="text-decoration: none;" class="w3-bar-item w3-button"><i class="fa fa-fw fa-linkedin-square w3-margin-right"></i>Connect</a>
     </div>
-</nav>
+</nav> -->
 
 <!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<!-- <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div> -->
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:230px">
+<!-- <div class="w3-main" style="margin-left:230px"> -->
 
   <!-- Header -->
-  <header id="portfolio">
+  <!-- <header id="portfolio">
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
     <div class="w3-container" 
       style="display: flex; 
@@ -342,10 +342,10 @@
       background-color: #354B93; color: #f1f1f1; letter-spacing: 0.5em;">
       <h1 style="margin-left: auto; margin-right: auto">RStudio Tutorials</h1>
     </div>
-  </header>
+  </header> -->
   
 <!-- First Photo Grid-->
-<div class="w3-row-padding">
+<!-- <div class="w3-row-padding">
   <div class="w3-third w3-container w3-margin-bottom">
     <a style="text-decoration: none" href="https://andrewebrandt.github.io/object/tutorials/0.-Getting-Started.html" target="_blank">
      <img src="https://andrewebrandt.github.io/object/imgTutorials/imgRT0.png" alt="" style="width:100%" class="w3-hover-opacity">
@@ -370,10 +370,10 @@
       <p>Learn how to simulate a distribution of scores and perform a null-hypothesis test using the one-sample t-statistic</p>
     </div></a>
   </div>
-</div>
+</div> -->
 
 <!-- Second Photo Grid-->
-<div class="w3-row-padding">
+<!-- <div class="w3-row-padding">
   <div class="w3-third w3-container w3-margin-bottom">
     <a style="text-decoration: none" href="https://andrewebrandt.github.io/object/tutorials/3.-t-statistic.html" target="_blank">
      <img src="https://andrewebrandt.github.io/object/imgTutorials/imgRT3.PNG" alt="" style="width:100%" class="w3-hover-opacity">
@@ -398,10 +398,10 @@
       <p>Learn how to create scatter plots, conduct an analysis of multiple regression, and test its assumptions</p>
     </div></a>
   </div>
-</div>
+</div> -->
 
 <!-- Third Photo Grid-->
-<div class="w3-row-padding">
+<!-- <div class="w3-row-padding">
   <div class="w3-third w3-container w3-margin-bottom">
     <a style="text-decoration: none" href="https://andrewebrandt.github.io/object/tutorials/Survey-Project-Analysis-in-RStudio.html" target="_blank">
      <img src="https://andrewebrandt.github.io/object/imgTutorials/imgRT6.PNG" alt="" style="width:100%" class="w3-hover-opacity">
@@ -411,23 +411,21 @@
     </div></a>
   </div>
 </div>
-
-<!-- End page content -->
-</div>
+</div> -->
 
 <script>
 // Script to open and close sidebar
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
+// function w3_open() {
+//     document.getElementById("mySidebar").style.display = "block";
+//     document.getElementById("myOverlay").style.display = "block";
+// }
  
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-function reload() {window.location.reload();
-}
+// function w3_close() {
+//     document.getElementById("mySidebar").style.display = "none";
+//     document.getElementById("myOverlay").style.display = "none";
+// }
+// function reload() {window.location.reload();
+// }
 
 </script>
 
