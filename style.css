@@ -1,2 +1,3 @@
 /* CSS by AEB June 2024 */
-body,h1,h2,h3,h4,h5,h6 {font-family: "Times New Roman"}
+body {font-size: 1.4rem;overflow-x: hidden;min-width:320px; /*-webkit-overflow-scrolling: touch;*/color:#1a1a1a;background:#ff0000; }
+h1,h2,h3,h4,h5,h6 {font-family: "Times New Roman"}
