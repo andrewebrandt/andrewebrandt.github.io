@@ -10,13 +10,23 @@
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
     /* 13px - 16px */
-    --topperFontSize: ont-size: clamp(1rem, 0.5vw + 0.875rem, 1.1875rem);
+    --topperFontSize: ont-size: clamp(1.44rem, 0.77vw + 1.25rem, 1.73rem);
     /* 31px - 49px */
-    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --headerFontSize: clamp(2.07rem, 1.11vw + 1.8rem, 2.49rem);
     --bodyFontSize: 1rem;
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
 }
+
+/*
+--font-size-sm: clamp(0.83rem, 0.44vw + 0.72rem, 1rem);
+--font-size-base: clamp(1rem, 0.53vw + 0.87rem, 1.2rem);
+--font-size-md: clamp(1.2rem, 0.64vw + 1.04rem, 1.44rem);
+--font-size-lg: clamp(1.44rem, 0.77vw + 1.25rem, 1.73rem);
+--font-size-xl: clamp(1.73rem, 0.92vw + 1.5rem, 2.07rem);
+--font-size-xxl: clamp(2.07rem, 1.11vw + 1.8rem, 2.49rem);
+--font-size-xxxl: clamp(2.49rem, 1.33vw + 2.16rem, 2.99rem); 
+*/
 
 body {
     margin: 0;
@@ -46,7 +56,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .cs-title {
     font-size: var(--headerFontSize);
-    font-weight: 900;
+    font-weight: 800;
     line-height: 1.5em;
     text-align: inherit;
     max-width: 43.75rem;
