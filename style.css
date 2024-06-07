@@ -10,7 +10,7 @@
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
     /* 13px - 16px */
-    --topperFontSize: ont-size: clamp(1.73rem, 0.92vw + 1.5rem, 2.07rem);
+    --topperFontSize: clamp(1.44rem, 0.77vw + 1.25rem, 1.73rem);
     /* 31px - 49px */
     --headerFontSize: clamp(2.07rem, 1.11vw + 1.8rem, 2.49rem);
     --bodyFontSize: 1rem;
