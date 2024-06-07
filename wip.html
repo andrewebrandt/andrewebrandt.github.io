@@ -1,328 +1,323 @@
 ﻿<!DOCTYPE html>
 <html>
+  <head>
 
-<head>
+    <!-- Google tag (gtag.js) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-009V7XN5C5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-<!-- Google tag (gtag.js) -->
-<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-009V7XN5C5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      gtag('config', 'G-009V7XN5C5');
+    </script> -->
 
-  gtag('config', 'G-009V7XN5C5');
-</script> -->
+    <title>WIP6</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://andrewebrandt.github.io/style.css"> <!-- global style sheet -->
 
-<title>WIP5</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://andrewebrandt.github.io/style.css"> <!-- global style sheet -->
-
-<style>
-
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-  #id {
-    padding: var(--sectionPadding);
-    background-color: #FAFAFA;
-  }
-  #id .cs-container {
-    width: 100%;
-    /* changes to 1280px at tablet */
-    max-width: 34.375em;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* 48px - 64px */
-    gap: clamp(3rem, 6vw, 4rem);
-  }
-  #id .cs-content {
-    /* top page text container */
-    text-align: left;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
-    align-items: flex-start;
-  }
-  #id .cs-title {
-    /* top page text */
-    max-width: 20ch;
-  }
-  #id .cs-text {
-    /* top page text */
-    max-width: 40rem;
-    position: relative;
-    z-index: 1;
-  }
-  #id .cs-text:after {
-    /* top page divider line */
-    content: "";
-    width: 100%;
-    height: 1px;
-    margin-top: 1.5rem;
-    background: var(--primary);
-    opacity: 1;
-    display: block;
-    position: relative;
-  }
-  #id .cs-chevron {
-    --chevronColor: var(--primary); 
-    width: 3rem;
-    height: auto;
-  }
-  #id .cs-card-group {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    /* 16px - 20px */
-    column-gap: clamp(1rem, 2.5vw, 1.25rem);
-    /* 28px - 40px */
-    row-gap: clamp(1.75rem, 2.5vw, 2.5rem);
-  }
-  #id .cs-item {
-    list-style: none;
-    width: 100%;
-    display: flex;
-    grid-column: span 12; 
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  #id .cs-item:hover .cs-picture img {
-    opacity: .95;
-    transform: scale(1.1);
-  }
-  #id .cs-link {
-    text-decoration: none;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  #id .cs-picture {
-    width: 100%;
-    height: 15rem;
-    margin-bottom: 1.5rem;
-    background-color: #ffffff;
-    overflow: hidden;
-    display: block;
-    position: relative;
-  }
-  #id .cs-picture img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: contain; /* cover */
-    transition: transform .6s, opacity .3s;
-  }
-  #id .cs-h3 {
-    padding: clamp(1rem, 2.5vw, 1.25rem);
-    font-size: 1.25rem;
-    line-height: 1.2em;
-    font-weight: 700;
-    text-align: left;
-    margin: 0 0 0.75rem 0;
-    color: var(--headerColor);
-  }
-  #id .cs-item-text {
-    padding: clamp(1rem, 2.5vw, 1.25rem);
-    font-size: 1rem;
-    line-height: 1.5em;
-    text-align: left;
-    margin: 0 0 1.5rem 0;
-    color: var(--bodyTextColor);
-  }
-  #id .cs-fake-link {
-    font-size: 1rem;
-    line-height: 1.2em;
-    font-weight: 700;
-    margin: 0;
-    margin-top: auto;
-    color: var(--primary);
-    display: inline-flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  #id .cs-fake-link:hover .cs-icon {
-    transform: translateX(0.5rem);
-  }
-  #id .cs-icon {
-    width: 1.25rem;
-    height: auto;
-    display: block;
-    transition: transform .3s;
-  }
-}
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-  #id .cs-container {
-    max-width: 80rem;
-  }
-  #id .cs-content {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  #id .cs-flex {
-    text-align: left;
-    width: 40vw;
-    max-width: 40rem;
-    flex: none;
-  }
-  #id .cs-title {
-    margin: 0;
-  }
-  #id .cs-text {
-    padding: 0.75rem 0 0.75rem 1.5rem;
-  }
-  #id .cs-text:after {
-    width: 1px;
-    height: 100%;
-    margin: 0 1.5rem 0 0;
-    order: -1;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-  #id .cs-item {
-    grid-column: span 6;
-  }
-  #id .cs-picture {
-    /* 240px - 420px */
-    height: clamp(15rem, 33vw, 26.25rem);
-  }
-}
-/* Large Desktop - 1300px */
-@media only screen and (min-width: 81.25rem) {
-  #id .cs-item {
-    grid-column: span 4;
-  }
-}
-
-</style>
-
-</head>
-
-<body>  <!-- class="w3-light-grey w3-content" style="max-width:1300px" -->
-  <section id="id"> <!-- Photo Grid -->
-    <div class="cs-container">
-        <div class="cs-content">
-            <div class="cs-flex">
-                <span class="cs-topper">Andrew Brandt, PhD</span>
-                <h2 class="cs-title">RStudio Turorials</h2>
-            </div>
-            <p class="cs-text">
-              <!-- Welcome! I’m a quantitative UX researcher in corporate technology who helps product teams deliver great digital experiences to users all around the world. -->
-              <!-- This collection of white papers shows some of my favorite unpublished projects from my 15-year professional career in experimental psychology. -->
-              This collection of RStudio Tutorials was designed for absolute beginners to RStudio who have a background in basic behavioral statistics or are enrolled in an introductory statistics course. LINK 
-              The tutorials are not intended to teach statistical concepts, rather, learners will learn how to use RStudio to apply common statistical techniques to behavioral data sets.  
-            </p>
-        </div>                  
-        <ul class="cs-card-group">
-            <li class="cs-item">
-                <a style="text-decoration: none" href="https://andrewebrandt.github.io/object/tutorials/0.-Getting-Started.html" target="_blank" class="cs-link">
-                    <picture class="cs-picture">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="https://andrewebrandt.github.io/object/imgTutorials/imgRT0.png">
-                        <!--Tablet and above Image-->
-                        <source media="(min-width: 601px)" srcset="https://andrewebrandt.github.io/object/imgTutorials/imgRT0.png">
-                        <img loading="lazy" decoding="async" src="https://andrewebrandt.github.io/object/imgTutorials/imgRT0.png" alt="room"> <!--width="413" height="420" -->
-                    </picture>
-                    <h3 class="cs-h3">Tutorial 0: Getting Started with RStudio & RMarkdown</h3>
-                    <p class="cs-item-text">
-                      Learn how to install RStudio, run functions in the console, install new packages, and work in RMarkdown
-                    </p>
-                    <!-- <span class="cs-fake-link"> 
-                        OPEN
-                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gold-chevron-right.svg" alt="" width="20" height="20" loading="lazy" decoding="async" aria-hidden="true">
-                    </span> -->
-                </a>
-            </li>
-            <li class="cs-item">
-                <a style="text-decoration: none" href="https://andrewebrandt.github.io/object/tutorials/1.-Import-Describe-Plot.html" target="_blank" class="cs-link" class="cs-link">
-                    <picture class="cs-picture">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="https://andrewebrandt.github.io/object/imgTutorials/imgRT1.PNG">
-                        <!--Tablet and above Image-->
-                        <source media="(min-width: 601px)" srcset="https://andrewebrandt.github.io/object/imgTutorials/imgRT1.PNG">
-                        <img loading="lazy" decoding="async" src="https://andrewebrandt.github.io/object/imgTutorials/imgRT1.PNG" alt="room">
-                    </picture>
-                    <h3 class="cs-h3">Tutorial 1: Descriptive Statistics & Data Visualization</h3>
-                    <p class="cs-item-text">
-                      Learn how to import and save data, calculate descriptive statistics, and visualize relationships
-                    </p>
-                </a>
-            </li>
-            <li class="cs-item">
-              <a style="text-decoration: none" href="https://andrewebrandt.github.io/object/tutorials/2.-Simulate-Distribute-Test.html" target="_blank" class="cs-link" class="cs-link">
-                    <picture class="cs-picture">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="https://andrewebrandt.github.io/object/imgTutorials/imgRT2.PNG">
-                        <!--Tablet and above Image-->
-                        <source media="(min-width: 601px)" srcset="https://andrewebrandt.github.io/object/imgTutorials/imgRT2.PNG">
-                        <img loading="lazy" decoding="async" src="https://andrewebrandt.github.io/object/imgTutorials/imgRT2.PNG" alt="room">
-                    </picture>
-                    <h3 class="cs-h3">Tutorial 2: Distributions & Hypothesis Testing</h3>
-                    <p class="cs-item-text">
-                      Learn how to simulate a distribution of scores and perform a null-hypothesis test using the one-sample t-statistic
-                    </p>
-                </a>
-            </li>
-            <li class="cs-item">
-              <a style="text-decoration: none" href="https://andrewebrandt.github.io/object/tutorials/3.-t-statistic.html" target="_blank" class="cs-link" class="cs-link">
-                    <picture class="cs-picture">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="https://andrewebrandt.github.io/object/imgTutorials/imgRT3.PNG">
-                        <!--Tablet and above Image-->
-                        <source media="(min-width: 601px)" srcset="https://andrewebrandt.github.io/object/imgTutorials/imgRT3.PNG">
-                        <img loading="lazy" decoding="async" src="https://andrewebrandt.github.io/object/imgTutorials/imgRT3.PNG" alt="room">
-                    </picture>
-                    <h3 class="cs-h3">Tutorial 3: t-Statistic</h3>
-                    <p class="cs-item-text">
-                      Learn how to visualize relationships, conduct a null hypothesis test using the t-statistic, and find effect size
-                    </p>
-                </a>
-            </li>
-            <li class="cs-item">
-              <a style="text-decoration: none" href="https://andrewebrandt.github.io/object/tutorials/4.-ANOVA-in-RStudio.html" target="_blank" class="cs-link" class="cs-link">
-                    <picture class="cs-picture">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="https://andrewebrandt.github.io/object/imgTutorials/imgRT4.PNG">
-                        <!--Tablet and above Image-->
-                        <source media="(min-width: 601px)" srcset="https://andrewebrandt.github.io/object/imgTutorials/imgRT4.PNG">
-                        <img loading="lazy" decoding="async" src="https://andrewebrandt.github.io/object/imgTutorials/imgRT4.PNG" alt="room">
-                    </picture>
-                    <h3 class="cs-h3">Tutorial 4: One-Factor ANOVA</h3>
-                    <p class="cs-item-text">
-                      Learn how to conduct a one-factor analysis of variance, run a Tukey's HSD test, and find effect size
-                    </p>
-                </a>
-            </li>
-            <li class="cs-item">
-              <a style="text-decoration: none" href="https://andrewebrandt.github.io/object/tutorials/5.-Multiple-Regression-in-RStudio.html" target="_blank" class="cs-link" class="cs-link">
-                    <picture class="cs-picture">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="https://andrewebrandt.github.io/object/imgTutorials/imgRT5.PNG">
-                        <!--Tablet and above Image-->
-                        <source media="(min-width: 601px)" srcset="https://andrewebrandt.github.io/object/imgTutorials/imgRT5.PNG">
-                        <img loading="lazy" decoding="async" src="https://andrewebrandt.github.io/object/imgTutorials/imgRT5.PNG" alt="room">
-                    </picture>
-                    <h3 class="cs-h3">Tutorial 5: Multiple Regression</h3>
-                    <p class="cs-item-text">
-                      Learn how to create scatter plots, conduct an analysis of multiple regression, and test its assumptions
-                    </p>
-                </a>
-            </li>
-        </ul>
-    </div>
-  </section>
-</body>
+    <style>
+    /* Mobile - 360px */
+    @media only screen and (min-width: 0rem) {
+      #id {
+        padding: var(--sectionPadding);
+        background-color: #FAFAFA;
+      }
+      #id .cs-container {
+        width: 100%;
+        /* changes to 1280px at tablet */
+        max-width: 34.375em;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+      }
+      #id .cs-content {
+        /* top page text container */
+        text-align: left;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: flex-start;
+      }
+      #id .cs-title {
+        /* top page text */
+        max-width: 20ch;
+      }
+      #id .cs-text {
+        /* top page text */
+        max-width: 40rem;
+        position: relative;
+        z-index: 1;
+      }
+      #id .cs-text:after {
+        /* top page divider line */
+        content: "";
+        width: 100%;
+        height: 1px;
+        margin-top: 1.5rem;
+        background: var(--primary);
+        opacity: 1;
+        display: block;
+        position: relative;
+      }
+      #id .cs-chevron {
+        --chevronColor: var(--primary); 
+        width: 3rem;
+        height: auto;
+      }
+      #id .cs-card-group {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        /* 16px - 20px */
+        column-gap: clamp(1rem, 2.5vw, 1.25rem);
+        /* 28px - 40px */
+        row-gap: clamp(1.75rem, 2.5vw, 2.5rem);
+      }
+      #id .cs-item {
+        list-style: none;
+        width: 100%;
+        display: flex;
+        grid-column: span 12; 
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      #id .cs-item:hover .cs-picture img {
+        opacity: .95;
+        transform: scale(1.1);
+      }
+      #id .cs-link {
+        text-decoration: none;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      #id .cs-picture {
+        width: 100%;
+        height: 15rem;
+        margin-bottom: 1.5rem;
+        background-color: #ffffff;
+        overflow: hidden;
+        display: block;
+        position: relative;
+      }
+      #id .cs-picture img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: contain; /* cover */
+        transition: transform .6s, opacity .3s;
+      }
+      #id .cs-h3 {
+        padding: clamp(1rem, 2.5vw, 1.25rem);
+        font-size: 1.25rem;
+        line-height: 1.2em;
+        font-weight: 700;
+        text-align: left;
+        margin: 0 0 0.75rem 0;
+        color: var(--headerColor);
+      }
+      #id .cs-item-text {
+        padding: clamp(1rem, 2.5vw, 1.25rem);
+        font-size: 1rem;
+        line-height: 1.5em;
+        text-align: left;
+        margin: 0 0 1.5rem 0;
+        color: var(--bodyTextColor);
+      }
+      #id .cs-fake-link {
+        font-size: 1rem;
+        line-height: 1.2em;
+        font-weight: 700;
+        margin: 0;
+        margin-top: auto;
+        color: var(--primary);
+        display: inline-flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      #id .cs-fake-link:hover .cs-icon {
+        transform: translateX(0.5rem);
+      }
+      #id .cs-icon {
+        width: 1.25rem;
+        height: auto;
+        display: block;
+        transition: transform .3s;
+      }
+    }
+    /* Tablet - 768px */
+    @media only screen and (min-width: 48rem) {
+      #id .cs-container {
+        max-width: 80rem;
+      }
+      #id .cs-content {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      #id .cs-flex {
+        text-align: left;
+        width: 40vw;
+        max-width: 40rem;
+        flex: none;
+      }
+      #id .cs-title {
+        margin: 0;
+      }
+      #id .cs-text {
+        padding: 0.75rem 0 0.75rem 1.5rem;
+      }
+      #id .cs-text:after {
+        width: 1px;
+        height: 100%;
+        margin: 0 1.5rem 0 0;
+        order: -1;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      #id .cs-item {
+        grid-column: span 6;
+      }
+      #id .cs-picture {
+        /* 240px - 420px */
+        height: clamp(15rem, 33vw, 26.25rem);
+      }
+    }
+    /* Large Desktop - 1300px */
+    @media only screen and (min-width: 81.25rem) {
+      #id .cs-item {
+        grid-column: span 4;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <section id="id">
+      <div class="cs-container">
+          <div class="cs-content">
+              <div class="cs-flex">
+                  <span class="cs-topper">Andrew Brandt, PhD</span>
+                  <h2 class="cs-title">RStudio Turorials</h2>
+              </div>
+              <p class="cs-text">
+                <!-- Welcome! I’m a quantitative UX researcher in corporate technology who helps product teams deliver great digital experiences to users all around the world. -->
+                <!-- This collection of white papers shows some of my favorite unpublished projects from my 15-year professional career in experimental psychology. -->
+                This collection of RStudio Tutorials was designed for absolute beginners to RStudio who have a background in basic behavioral statistics or are enrolled in an introductory statistics course. LINK 
+                The tutorials are not intended to teach statistical concepts, rather, learners will learn how to use RStudio to apply common statistical techniques to behavioral data sets.  
+              </p>
+          </div>                  
+          <ul class="cs-card-group">
+              <li class="cs-item">
+                  <a style="text-decoration: none" href="https://andrewebrandt.github.io/object/tutorials/0.-Getting-Started.html" target="_blank" class="cs-link">
+                      <picture class="cs-picture">
+                          <!--Mobile Image-->
+                          <source media="(max-width: 600px)" srcset="https://andrewebrandt.github.io/object/imgTutorials/imgRT0.png">
+                          <!--Tablet and above Image-->
+                          <source media="(min-width: 601px)" srcset="https://andrewebrandt.github.io/object/imgTutorials/imgRT0.png">
+                          <img loading="lazy" decoding="async" src="https://andrewebrandt.github.io/object/imgTutorials/imgRT0.png" alt="room"> <!--width="413" height="420" -->
+                      </picture>
+                      <h3 class="cs-h3">Tutorial 0: Getting Started with RStudio & RMarkdown</h3>
+                      <p class="cs-item-text">
+                        Learn how to install RStudio, run functions in the console, install new packages, and work in RMarkdown
+                      </p>
+                      <!-- <span class="cs-fake-link"> 
+                          OPEN
+                          <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gold-chevron-right.svg" alt="" width="20" height="20" loading="lazy" decoding="async" aria-hidden="true">
+                      </span> -->
+                  </a>
+              </li>
+              <li class="cs-item">
+                  <a style="text-decoration: none" href="https://andrewebrandt.github.io/object/tutorials/1.-Import-Describe-Plot.html" target="_blank" class="cs-link" class="cs-link">
+                      <picture class="cs-picture">
+                          <!--Mobile Image-->
+                          <source media="(max-width: 600px)" srcset="https://andrewebrandt.github.io/object/imgTutorials/imgRT1.PNG">
+                          <!--Tablet and above Image-->
+                          <source media="(min-width: 601px)" srcset="https://andrewebrandt.github.io/object/imgTutorials/imgRT1.PNG">
+                          <img loading="lazy" decoding="async" src="https://andrewebrandt.github.io/object/imgTutorials/imgRT1.PNG" alt="room">
+                      </picture>
+                      <h3 class="cs-h3">Tutorial 1: Descriptive Statistics & Data Visualization</h3>
+                      <p class="cs-item-text">
+                        Learn how to import and save data, calculate descriptive statistics, and visualize relationships
+                      </p>
+                  </a>
+              </li>
+              <li class="cs-item">
+                <a style="text-decoration: none" href="https://andrewebrandt.github.io/object/tutorials/2.-Simulate-Distribute-Test.html" target="_blank" class="cs-link" class="cs-link">
+                      <picture class="cs-picture">
+                          <!--Mobile Image-->
+                          <source media="(max-width: 600px)" srcset="https://andrewebrandt.github.io/object/imgTutorials/imgRT2.PNG">
+                          <!--Tablet and above Image-->
+                          <source media="(min-width: 601px)" srcset="https://andrewebrandt.github.io/object/imgTutorials/imgRT2.PNG">
+                          <img loading="lazy" decoding="async" src="https://andrewebrandt.github.io/object/imgTutorials/imgRT2.PNG" alt="room">
+                      </picture>
+                      <h3 class="cs-h3">Tutorial 2: Distributions & Hypothesis Testing</h3>
+                      <p class="cs-item-text">
+                        Learn how to simulate a distribution of scores and perform a null-hypothesis test using the one-sample t-statistic
+                      </p>
+                  </a>
+              </li>
+              <li class="cs-item">
+                <a style="text-decoration: none" href="https://andrewebrandt.github.io/object/tutorials/3.-t-statistic.html" target="_blank" class="cs-link" class="cs-link">
+                      <picture class="cs-picture">
+                          <!--Mobile Image-->
+                          <source media="(max-width: 600px)" srcset="https://andrewebrandt.github.io/object/imgTutorials/imgRT3.PNG">
+                          <!--Tablet and above Image-->
+                          <source media="(min-width: 601px)" srcset="https://andrewebrandt.github.io/object/imgTutorials/imgRT3.PNG">
+                          <img loading="lazy" decoding="async" src="https://andrewebrandt.github.io/object/imgTutorials/imgRT3.PNG" alt="room">
+                      </picture>
+                      <h3 class="cs-h3">Tutorial 3: t-Statistic</h3>
+                      <p class="cs-item-text">
+                        Learn how to visualize relationships, conduct a null hypothesis test using the t-statistic, and find effect size
+                      </p>
+                  </a>
+              </li>
+              <li class="cs-item">
+                <a style="text-decoration: none" href="https://andrewebrandt.github.io/object/tutorials/4.-ANOVA-in-RStudio.html" target="_blank" class="cs-link" class="cs-link">
+                      <picture class="cs-picture">
+                          <!--Mobile Image-->
+                          <source media="(max-width: 600px)" srcset="https://andrewebrandt.github.io/object/imgTutorials/imgRT4.PNG">
+                          <!--Tablet and above Image-->
+                          <source media="(min-width: 601px)" srcset="https://andrewebrandt.github.io/object/imgTutorials/imgRT4.PNG">
+                          <img loading="lazy" decoding="async" src="https://andrewebrandt.github.io/object/imgTutorials/imgRT4.PNG" alt="room">
+                      </picture>
+                      <h3 class="cs-h3">Tutorial 4: One-Factor ANOVA</h3>
+                      <p class="cs-item-text">
+                        Learn how to conduct a one-factor analysis of variance, run a Tukey's HSD test, and find effect size
+                      </p>
+                  </a>
+              </li>
+              <li class="cs-item">
+                <a style="text-decoration: none" href="https://andrewebrandt.github.io/object/tutorials/5.-Multiple-Regression-in-RStudio.html" target="_blank" class="cs-link" class="cs-link">
+                      <picture class="cs-picture">
+                          <!--Mobile Image-->
+                          <source media="(max-width: 600px)" srcset="https://andrewebrandt.github.io/object/imgTutorials/imgRT5.PNG">
+                          <!--Tablet and above Image-->
+                          <source media="(min-width: 601px)" srcset="https://andrewebrandt.github.io/object/imgTutorials/imgRT5.PNG">
+                          <img loading="lazy" decoding="async" src="https://andrewebrandt.github.io/object/imgTutorials/imgRT5.PNG" alt="room">
+                      </picture>
+                      <h3 class="cs-h3">Tutorial 5: Multiple Regression</h3>
+                      <p class="cs-item-text">
+                        Learn how to create scatter plots, conduct an analysis of multiple regression, and test its assumptions
+                      </p>
+                  </a>
+              </li>
+          </ul>
+      </div>
+    </section>
+  </body>
 </html>
 
 
