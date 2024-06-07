@@ -20,10 +20,6 @@
 
 <style>
 
-  /*-- -------------------------- -->
-<---          Services          -->
-<--- -------------------------- -*/
-
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #services-1628 {
@@ -42,7 +38,7 @@
     gap: clamp(3rem, 6vw, 4rem);
   }
   #services-1628 .cs-content {
-    /* top page text -> set text align to left if content needs to be left aligned */
+    /* top page text container */
     text-align: left;
     width: 100%;
     display: flex;
@@ -51,15 +47,17 @@
     align-items: flex-start;
   }
   #services-1628 .cs-title {
+    /* top page text */
     max-width: 20ch;
   }
   #services-1628 .cs-text {
+    /* top page text */
     max-width: 40rem;
     position: relative;
     z-index: 1;
   }
   #services-1628 .cs-text:after {
-    /* divider line */
+    /* top page divider line */
     content: "";
     width: 100%;
     height: 1px;
@@ -75,11 +73,12 @@
     height: auto;
   }
   #services-1628 .cs-card-group {
+    /* grid container https://developer.mozilla.org/en-US/docs/Web/CSS/repeat */
     width: 100%;
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(2, 1fr); /*12 */
     /* 16px - 20px */
     column-gap: clamp(1rem, 2.5vw, 1.25rem);
     /* 28px - 40px */
