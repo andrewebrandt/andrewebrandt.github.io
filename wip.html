@@ -77,7 +77,7 @@
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     /* 16px - 20px */
     column-gap: clamp(1rem, 2.5vw, 1.25rem);
     /* 28px - 40px */
@@ -117,7 +117,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain; /* cover */
     transition: transform .6s, opacity .3s;
   }
   #services-1628 .cs-h3 {
@@ -199,7 +199,7 @@
 /* Large Desktop - 1300px */
 @media only screen and (min-width: 81.25rem) {
   #services-1628 .cs-item {
-    grid-column: span 3;
+    grid-column: span 4;
   }
 }
 
