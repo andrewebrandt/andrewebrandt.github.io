@@ -75,7 +75,9 @@ h1,h2,h3,h4,h5,h6 {
     color: var(--bodyTextColor);
 }
 
+/* nav bar https://www.codingnepalweb.com/sticky-navigation-bar-html-css/ */
 nav{
+    z-index: 1;
     position: fixed;
     top: 0;
     left: 0;
@@ -85,7 +87,7 @@ nav{
   }
   nav.sticky{
     padding: 15px 20px;
-    background: #4070f4;
+    /* background: #4070f4; */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   }
   nav .nav-content{
@@ -95,14 +97,6 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  nav .logo a{
-    font-weight: 500;
-    font-size: 35px;
-    color: #4070f4;
-  }
-  nav.sticky .logo a{
-    color: #fff;
   }
   .nav-content .nav-links{
     display: flex;
