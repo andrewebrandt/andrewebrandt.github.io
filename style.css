@@ -77,8 +77,10 @@ h1,h2,h3,h4,h5,h6 {
 
 /* nav bar https://www.codingnepalweb.com/sticky-navigation-bar-html-css/ */
 nav{
-    z-index: 1;
+    /* z-index: 1; */
     position: fixed;
+    list-style: none;
+    align-items: center;
     top: 0;
     left: 0;
     width: 100%;
@@ -101,7 +103,7 @@ nav .nav-content{
     align-items: center;
   }
 .nav-content .nav-links li{
-    display: inline-block;
+    display: inline;
     list-style: none;
     margin: 0 8px;
   }
@@ -112,6 +114,7 @@ nav .nav-content{
     font-weight: 500;
     padding: 10px 4px;
     transition: all 0.3s ease;
+    display: inline-block;
   }
 .nav-links li a:hover{
      color: #d3dfff;
