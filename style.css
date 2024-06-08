@@ -2,7 +2,7 @@
 :root {
     /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
     /* clamp font sizes: https://www.aleksandrhovhannisyan.com/blog/fluid-type-scale-with-css-clamp/ */ 
-    --primary: #ff3e3e;
+    --primary: #ffba43;
     --primaryLight: #ffba43;
     --secondary: #ffba43;
     --secondaryLight: #ffba43;
@@ -53,7 +53,6 @@ h1,h2,h3,h4,h5,h6 {
     margin-bottom: 0.25rem;
     display: block;
 }
-
 .cs-title {
     font-size: var(--headerFontSize);
     font-weight: 800;
@@ -64,7 +63,6 @@ h1,h2,h3,h4,h5,h6 {
     color: var(--headerColor);
     position: relative;
 }
-
 .cs-text {
     font-size: var(--bodyFontSize);
     line-height: 1.5em;
@@ -74,10 +72,24 @@ h1,h2,h3,h4,h5,h6 {
     margin: 0;
     color: var(--bodyTextColor);
 }
+.nav {
+    border: 1px solid #ccc;
+    border-width: 1px 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* « The magic. */
+}
+.nav li {
+    display: inline; /* « More magic. */
+}
+.nav a {
+    display: inline-block; /* « Last bit of magic. */
+    padding: 10px;
+}
 
 /* nav bar https://www.codingnepalweb.com/sticky-navigation-bar-html-css/ */
-nav{
-    /* z-index: 1; */
+/* nav{
     position: fixed;
     list-style: none;
     align-items: center;
@@ -85,7 +97,7 @@ nav{
     left: 0;
     width: 100%;
     padding: 0px 0px;
-    /* transition: all 0.4s ease; */
+    transition: all 0.4s ease;
     background: #4070f4;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   }
@@ -118,4 +130,4 @@ nav .nav-content{
   }
 .nav-links li a:hover{
      color: #d3dfff;
-   }
+   } */
