@@ -138,7 +138,7 @@ h1,h2,h3,h4,h5,h6 {
     grid-column: span 12; 
     flex-direction: column;
     align-items: flex-start;
-    padding: 130px 0 0 0;
+    padding: 50px 0 0 0;
 }
 #id .cs-item:hover .cs-picture img {
     opacity: .9;
@@ -221,7 +221,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 #id .cs-item {
     grid-column: span 6;
-    /* padding: 0 0 0 0; */
+    padding: 25px 0 0 0;
 }
 #id .cs-picture {
     /* 240px - 420px */
@@ -232,7 +232,7 @@ h1,h2,h3,h4,h5,h6 {
 @media only screen and (min-width: 81.25rem) {
 #id .cs-item {
     grid-column: span 4;
-    /* padding: 0 0 0 0; */
+    padding: 0 0 0 0;
 }
 }
 
