@@ -2,7 +2,7 @@
 :root {
     /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
     /* clamp font sizes: https://www.aleksandrhovhannisyan.com/blog/fluid-type-scale-with-css-clamp/ */ 
-    --primary: #ffba43;
+    --primary: #ffa201;
     --primaryLight: #ffba43;
     --secondary: #ffba43;
     --secondaryLight: #ffba43;
@@ -72,20 +72,27 @@ h1,h2,h3,h4,h5,h6 {
     margin: 0;
     color: var(--bodyTextColor);
 }
+/* nav bar https://csswizardry.com/2011/01/create-a-centred-horizontal-navigation/ */
 .nav {
-    border: 1px solid #ccc;
-    border-width: 1px 0;
+    border: none;
     list-style: none;
     margin: 0;
     padding: 0;
     text-align: center; /* « The magic. */
+    background: #4070f4;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 .nav li {
     display: inline; /* « More magic. */
+    text-decoration: none;
+    color: #e4561d;
 }
 .nav a {
     display: inline-block; /* « Last bit of magic. */
     padding: 10px;
+}
+.nav a:hover {
+    color: #17b93f;
 }
 
 /* nav bar https://www.codingnepalweb.com/sticky-navigation-bar-html-css/ */
