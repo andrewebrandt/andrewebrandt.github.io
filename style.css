@@ -82,7 +82,7 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 0px 0px;
+    /* padding: 0px 0px; */
     /* transition: all 0.4s ease; */
     background: #4070f4;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -95,7 +95,7 @@ nav{
   nav .nav-content{
     height: 100%;
     /* max-width: 1200px; */
-    margin: auto;
+    /* margin: auto; */
     display: flex;
     align-items: center;
     justify-content: space-between;
