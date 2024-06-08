@@ -80,20 +80,20 @@ h1,h2,h3,h4,h5,h6 {
     margin: 0;
     padding: 0;
     text-align: center; /* « The magic. */
-    background: #006989;
+    background: #FED8B1;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 .nav li {
     display: inline; /* « More magic. */
     text-decoration: none;
-    color: #fafafa;
+    color: #6F4E37;
 }
 .nav a {
     display: inline-block; /* « Last bit of magic. */
     padding: 10px;
 }
 .nav a:hover {
-    color: #9fe2f7;
+    color: #241103;
 }
 
 /* nav bar https://www.codingnepalweb.com/sticky-navigation-bar-html-css/ */
