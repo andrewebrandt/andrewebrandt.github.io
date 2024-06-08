@@ -6,7 +6,7 @@
     --primaryLight: #ECB176;
     --secondary: #ECB176;
     --secondaryLight: #ECB176;
-    --headerColor: #A67B5B;
+    --headerColor: #543310;
     --bodyTextColor: #6F4E37;
     --bodyTextColorWhite: #fafafa;
     /* 13px - 16px */
@@ -80,13 +80,13 @@ h1,h2,h3,h4,h5,h6 {
     margin: 0;
     padding: 0;
     text-align: center; /* « The magic. */
-    background: #FED8B1;
+    background: hsl(0, 0%, 100%, 0);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 .nav li {
     display: inline; /* « More magic. */
     text-decoration: none;
-    color: #6F4E37;
+    color: #543310;
 }
 .nav a {
     display: inline-block; /* « Last bit of magic. */
