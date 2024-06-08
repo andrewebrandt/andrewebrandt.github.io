@@ -78,6 +78,7 @@ h1,h2,h3,h4,h5,h6 {
 .nav {
     z-index: 100;
     position: fixed;
+    width: 100%;
     top: 0;
     border: none;
     list-style: none;
@@ -85,9 +86,7 @@ h1,h2,h3,h4,h5,h6 {
     padding: 0;
     text-align: center; /* « The magic. */
     background: #FFFAFA;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-
-    /* width: 100%; */
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
 }
 .nav li {
     display: inline; /* « More magic. */
@@ -96,7 +95,7 @@ h1,h2,h3,h4,h5,h6 {
 .nav a {
     display: inline-block; /* « Last bit of magic. */
     text-decoration: none;
-    padding: 10px 50px;
+    padding: clamp(1rem, 0.53vw + 0.87rem, 1.2rem) clamp(2.07rem, 1.11vw + 1.8rem, 2.49rem);
     color: #543310;
 }
 .nav a:hover {
