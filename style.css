@@ -96,7 +96,6 @@ h1,h2,h3,h4,h5,h6 {
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
     align-items: flex-start;
 }
 #id .cs-title {
@@ -107,7 +106,6 @@ h1,h2,h3,h4,h5,h6 {
     /* top page text */
     max-width: 40rem;
     position: relative;
-    z-index: 0;
 }
 #id .cs-text:after {
     /* top page divider line */
@@ -208,7 +206,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 #id .cs-text {
     padding: 0.75rem 0 0.75rem 1.5rem;
-    z-index: 2;
 }
 #id .cs-text:after {
     width: 1px;
