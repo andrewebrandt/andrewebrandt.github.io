@@ -95,7 +95,7 @@ h1,h2,h3,h4,h5,h6 {
 .nav a {
     display: inline-block; /* « Last bit of magic. */
     text-decoration: none;
-    padding: clamp(1rem, 0.53vw + 0.87rem, 1.2rem) clamp(2.07rem, 1.11vw + 1.8rem, 2.49rem);
+    padding: 0px 10%;
     color: #543310;
 }
 .nav a:hover {
