@@ -82,7 +82,7 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
-    /* padding: 0px 0px; */
+    padding: 0px 0px;
     /* transition: all 0.4s ease; */
     background: #4070f4;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -92,38 +92,33 @@ nav{
     background: #4070f4;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   } */
-  /* nav .nav-content{
+  nav .nav-content{
     height: 100%;
     max-width: 1200px;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-  } */
-  nav .nav-con{
-    height: 100%;
   }
-  /* .nav-content .nav-links{
-    display: flex;
-  } */
-    .nav-con .nav-link{
+
+  .nav-content .nav-links{
     display: flex;
   }
-  /* .nav-content .nav-links li{
+  .nav-content .nav-links li{
     list-style: none;
     margin: 0 8px;
-  } */
-   /* .nav-links li a{
+  }
+   .nav-links li a{
     text-decoration: none;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
     padding: 10px 4px;
     transition: all 0.3s ease;
-  } */
-   /* .nav-links li a:hover{
+  }
+   .nav-links li a:hover{
      color: #4070f4;
-   } */
+   }
    /* nav.sticky .nav-links li a{
      color: #fff;
      transition: all 0.4s ease;
