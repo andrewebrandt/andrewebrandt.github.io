@@ -120,11 +120,6 @@ h1,h2,h3,h4,h5,h6 {
     display: block;
     position: relative;
 }
-#id .cs-chevron {
-    --chevronColor: var(--primary); 
-    width: 3rem;
-    height: auto;
-}
 #id .cs-card-group {
     width: 100%;
     margin: 0;
@@ -146,7 +141,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 #id .cs-item:hover .cs-picture img {
     opacity: .9;
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 #id .cs-link {
     text-decoration: none;
@@ -171,11 +166,11 @@ h1,h2,h3,h4,h5,h6 {
     height: 100%;
     width: 100%;
     object-fit: contain; /* cover */
-    transition: transform .3s, opacity .1s;
+    transition: transform .3s, opacity .2s;
 }
 #id .cs-h3 {
     padding: 0px clamp(1rem, 2.5vw, 1.25rem);
-    font-size: clamp(1.2rem, 0.64vw + 1.04rem, 1.44rem);
+    font-size: 1.3;
     line-height: 1.2em;
     font-weight: 700;
     text-align: left;
@@ -184,7 +179,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 #id .cs-item-text {
     padding: 0px clamp(1rem, 2.5vw, 1.25rem);
-    font-size: clamp(1rem, 0.53vw + 0.87rem, 1.2rem);
+    font-size: 1.1;
     line-height: 1.5em;
     text-align: left;
     margin: 0 0 1.5rem 0;
