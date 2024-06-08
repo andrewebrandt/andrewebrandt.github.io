@@ -13,7 +13,7 @@
     --topperFontSize: clamp(1.44rem, 0.77vw + 1.25rem, 1.73rem);
     /* 31px - 49px */
     --headerFontSize: clamp(2.07rem, 1.11vw + 1.8rem, 2.49rem);
-    --bodyFontSize: 1rem;
+    --bodyFontSize: clamp(1.2rem, 0.64vw + 1.04rem, 1.44rem);
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
 }
@@ -268,7 +268,7 @@ h1,h2,h3,h4,h5,h6 {
     border: none;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 1vh 0;
     text-align: center; /* « The magic. */
     background: #FFFAFA;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
@@ -276,7 +276,7 @@ h1,h2,h3,h4,h5,h6 {
 .nav li {
     display: inline; /* « More magic. */
     text-decoration: none;
-    padding: 1vh 1.5vw;
+    padding: 0 1.5vw;
 }
 .nav a {
     display: inline-block; /* « Last bit of magic. */
