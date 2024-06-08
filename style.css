@@ -18,6 +18,8 @@
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
 }
 
+/* color palette https://colorhunt.co/palette/f8f4e1af8f6f74512d543310 */
+
 /*
 --font-size-sm: clamp(0.83rem, 0.44vw + 0.72rem, 1rem);
 --font-size-base: clamp(1rem, 0.53vw + 0.87rem, 1.2rem);
@@ -80,24 +82,27 @@ h1,h2,h3,h4,h5,h6 {
     margin: 0;
     padding: 0;
     text-align: center; /* « The magic. */
-    background: #FFFAFA
+    background: #FFFAFA;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 .nav li {
     display: inline; /* « More magic. */
     text-decoration: none;
-    color: #ff0000;
 }
 .nav a {
     display: inline-block; /* « Last bit of magic. */
     text-decoration: none;
     padding: 10px;
-    color: #ffbb00;
+    color: #543310;
 }
 .nav a:hover {
-    color: #1eff00;
+    color: #6F4E37;
 }
 
-/* nav bar https://www.codingnepalweb.com/sticky-navigation-bar-html-css/ */
+/* alt nav bar https://www.codingnepalweb.com/sticky-navigation-bar-html-css/ */
 /* nav{
     position: fixed;
     list-style: none;
