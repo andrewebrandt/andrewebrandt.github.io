@@ -80,7 +80,7 @@ h1,h2,h3,h4,h5,h6 {
     margin: 0;
     padding: 0;
     text-align: center; /* « The magic. */
-    background: hsl(0, 0%, 100%, 1);
+    background: #FFFAFA
 }
 .nav li {
     display: inline; /* « More magic. */
@@ -91,6 +91,7 @@ h1,h2,h3,h4,h5,h6 {
     display: inline-block; /* « Last bit of magic. */
     text-decoration: none;
     padding: 10px;
+    color: #ffbb00;
 }
 .nav a:hover {
     color: #1eff00;
