@@ -2,12 +2,12 @@
 :root {
     /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
     /* clamp font sizes: https://www.aleksandrhovhannisyan.com/blog/fluid-type-scale-with-css-clamp/ */ 
-    --primary: #E88D67;
-    --primaryLight: #E88D67;
-    --secondary: #E88D67;
-    --secondaryLight: #E88D67;
-    --headerColor: #006989;
-    --bodyTextColor: #005C78;
+    --primary: #ECB176;
+    --primaryLight: #ECB176;
+    --secondary: #ECB176;
+    --secondaryLight: #ECB176;
+    --headerColor: #A67B5B;
+    --bodyTextColor: #6F4E37;
     --bodyTextColorWhite: #fafafa;
     /* 13px - 16px */
     --topperFontSize: clamp(1.44rem, 0.77vw + 1.25rem, 1.73rem);
@@ -90,6 +90,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .nav a {
     display: inline-block; /* « Last bit of magic. */
+    text-decoration: none;
     padding: 10px;
 }
 .nav a:hover {
