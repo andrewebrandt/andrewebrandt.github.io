@@ -85,12 +85,13 @@ nav{
     padding: 0px 0px;
     transition: all 0.4s ease;
     background: #4070f4;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   }
-  nav.sticky{
+  /* nav.sticky{
     padding: 0px 0px;
     background: #4070f4;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  }
+  } */
   nav .nav-content{
     height: 100%;
     /* max-width: 1200px; */
@@ -117,10 +118,10 @@ nav{
    .nav-links li a:hover{
      color: #4070f4;
    }
-   nav.sticky .nav-links li a{
+   /* nav.sticky .nav-links li a{
      color: #fff;
      transition: all 0.4s ease;
   }
    nav.sticky .nav-links li a:hover{
     color: #06a0f9;
-  }
+  } */
