@@ -35,11 +35,9 @@ body {
     padding: 0;
     font-family: "Raleway", sans-serif;
 }
-
 h1,h2,h3,h4,h5,h6 {
     font-family: "Raleway", sans-serif;
 }
-
 *, *:before, *:after {
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
@@ -288,47 +286,3 @@ h1,h2,h3,h4,h5,h6 {
 .nav a:hover {
     color: #d1985f;
 }
-
-/* alt nav bar https://www.codingnepalweb.com/sticky-navigation-bar-html-css/ */
-/* nav{
-    position: fixed;
-    list-style: none;
-    align-items: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 0px 0px;
-    transition: all 0.4s ease;
-    background: #4070f4;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  }
-nav .nav-content{
-    height: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-.nav-content .nav-links{
-    display: flex;
-    list-style: none;
-    align-items: center;
-  }
-.nav-content .nav-links li{
-    display: inline;
-    list-style: none;
-    margin: 0 8px;
-  }
-.nav-links li a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 10px 4px;
-    transition: all 0.3s ease;
-    display: inline-block;
-  }
-.nav-links li a:hover{
-     color: #d3dfff;
-   } */
