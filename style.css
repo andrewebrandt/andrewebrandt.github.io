@@ -13,7 +13,7 @@
     --topperFontSize: clamp(1.44rem, 0.77vw + 1.25rem, 1.73rem);
     /* 31px - 49px */
     --headerFontSize: clamp(2.07rem, 1.11vw + 1.8rem, 2.49rem);
-    --bodyFontSize: clamp(1.2rem, 0.64vw + 1.04rem, 1.44rem);
+    --bodyFontSize: clamp(1rem, 0.53vw + 0.87rem, 1.2rem);
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
 }
@@ -175,7 +175,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 #id .cs-h3 {
     padding: 0px clamp(1rem, 2.5vw, 1.25rem);
-    font-size: 1.25rem;
+    font-size: clamp(1.2rem, 0.64vw + 1.04rem, 1.44rem);
     line-height: 1.2em;
     font-weight: 700;
     text-align: left;
@@ -184,32 +184,11 @@ h1,h2,h3,h4,h5,h6 {
 }
 #id .cs-item-text {
     padding: 0px clamp(1rem, 2.5vw, 1.25rem);
-    font-size: 1rem;
+    font-size: clamp(1rem, 0.53vw + 0.87rem, 1.2rem);
     line-height: 1.5em;
     text-align: left;
     margin: 0 0 1.5rem 0;
     color: var(--bodyTextColor);
-}
-#id .cs-fake-link {
-    font-size: 1rem;
-    line-height: 1.2em;
-    font-weight: 700;
-    margin: 0;
-    margin-top: auto;
-    color: var(--primary);
-    display: inline-flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 0.5rem;
-}
-#id .cs-fake-link:hover .cs-icon {
-    transform: translateX(0.5rem);
-}
-#id .cs-icon {
-    width: 1.25rem;
-    height: auto;
-    display: block;
-    transition: transform .3s;
 }
 }
 /* Tablet - 768px */
